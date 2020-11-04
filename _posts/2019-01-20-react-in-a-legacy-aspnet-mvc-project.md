@@ -220,3 +220,7 @@ My `Client` folder I've structured as follows:
 One final note - I had to of course include the `/Scripts/Dist` folder to the `.gitignore` (I also double-checked that `node_modules` was included in the `.gitignore`, you can never be too careful).
 
 Overall, I'm happy with how things turned out. I'm looking for tools that will automate the build process and integrate it into Visual Studio, although I don't particularly mind typing the necessary build commands.
+
+"watch-build": " nodemon --watch ./ --ext js,jsx,scss --ignore Scripts/Dist --exec \" npm run build \""
+
+
